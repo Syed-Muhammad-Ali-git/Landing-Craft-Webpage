@@ -11,7 +11,7 @@ const NovaAbout: React.FC = () => {
           style={{ cursor: "pointer" }}
           onClick={() => window.location.replace("/")}
         >
-          Nova<span>AI</span>
+          Landing<span>Craft</span>
         </div>
         <nav>
           <ul className="lp-nav">
@@ -31,7 +31,7 @@ const NovaAbout: React.FC = () => {
               Democratizing <span className="highlight">Intelligence</span>
             </h1>
             <p className="lp-hero-desc fade-up" style={{ margin: "1.25rem auto 0", animationDelay: "0.2s" }}>
-              NovaAI was founded on the belief that cutting-edge artificial 
+              LandingCraft was founded on the belief that cutting-edge artificial 
               intelligence should be accessible to teams of all sizes, not just
               tech giants.
             </p>
@@ -45,7 +45,7 @@ const NovaAbout: React.FC = () => {
             <div className="lp-feature-card">
               <div className="lp-feature-name">Founded 2024</div>
               <p className="lp-feature-text">
-                Started in a small garage in San Francisco, NovaAI has grown
+                Started in a small garage in San Francisco, LandingCraft has grown
                 from a prototype to a platform serving thousands of users.
               </p>
             </div>
@@ -59,7 +59,7 @@ const NovaAbout: React.FC = () => {
             <div className="lp-feature-card">
               <div className="lp-feature-name">Scale Daily</div>
               <p className="lp-feature-text">
-                From startups to enterprises, NovaAI scales with your needs
+                From startups to enterprises, LandingCraft scales with your needs
                 effortlessly.
               </p>
             </div>
@@ -84,7 +84,7 @@ const NovaAbout: React.FC = () => {
         <div className="lp-footer-top">
           <div className="lp-footer-brand">
             <div className="lp-logo">
-              Nova<span>AI</span>
+              Landing<span>Craft</span>
             </div>
             <p>
               Intelligent automation for modern teams. We make AI accessible,
@@ -108,7 +108,7 @@ const NovaAbout: React.FC = () => {
         </div>
         <div className="lp-footer-divider" />
         <div className="lp-footer-bottom">
-          <p>© 2026 NovaAI, Inc. All rights reserved.</p>
+          <p>© 2026 LandingCraft, Inc. All rights reserved.</p>
         </div>
       </footer>
     </div>

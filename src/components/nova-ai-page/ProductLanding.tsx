@@ -589,7 +589,7 @@ const ProductLanding: React.FC = () => {
             style={{ cursor: "pointer" }}
             onClick={() => window.location.replace("/")}
           >
-            Nova<span>AI</span>
+            Landing<span>Craft</span>
           </div>
           <nav>
             <ul className="lp-nav">
@@ -615,11 +615,12 @@ const ProductLanding: React.FC = () => {
               Now in Public Beta — Try for Free
             </div>
             <h1 className="lp-hero-title">
-              The AI Platform <br />
+              The Platform <br />
               Built for <span className="highlight">Real Results</span>
             </h1>
             <p className="lp-hero-desc">
-              NovaAI turns your raw data into intelligent decisions. Automate
+              LandingCraft turns your raw data into intelligent decisions.
+              Automate
               workflows, predict outcomes, and scale your operations — all from
               one unified dashboard.
             </p>
@@ -637,7 +638,7 @@ const ProductLanding: React.FC = () => {
                   <div className="lp-device-screen">
                     <span className="lp-device-icon">🧠</span>
                   </div>
-                  <div className="lp-device-label">NovaAI Dashboard</div>
+                  <div className="lp-device-label">LandingCraft Dashboard</div>
                 </div>
                 <div className="lp-img-tag">● Live</div>
               </div>
@@ -670,7 +671,7 @@ const ProductLanding: React.FC = () => {
               <div className="lp-feature-name">Instant Automation</div>
               <p className="lp-feature-text">
                 Build complex multi-step workflows in minutes — no code needed.
-                Connect any tool in your stack and let NovaAI handle the
+                Connect any tool in your stack and let LandingCraft handle the
                 repetitive work so your team can focus on what matters.
               </p>
             </div>
@@ -700,7 +701,7 @@ const ProductLanding: React.FC = () => {
           <div className="lp-footer-top">
             <div className="lp-footer-brand">
               <div className="lp-logo">
-                Nova<span>AI</span>
+                Landing<span>Craft</span>
               </div>
               <p>
                 Intelligent automation for modern teams. We make AI accessible,
@@ -713,11 +714,13 @@ const ProductLanding: React.FC = () => {
               >
                 <div className="lp-contact-item">
                   <span>📧</span>
-                  <a href="mailto:hello@novaai.io">hello@novaai.io</a>
+                  <a href="mailto:hello@landingcraft.ai">
+                    hello@landingcraft.ai
+                  </a>
                 </div>
                 <div className="lp-contact-item">
                   <span>📞</span>
-                  <a href="tel:+1-800-NOVA-AI">+1 (800) 668-2-24</a>
+                  <a href="tel:+1-800-LANDING-1">+1 (800) 526-3464</a>
                 </div>
                 <div className="lp-contact-item">
                   <span>📍</span>
@@ -784,7 +787,7 @@ const ProductLanding: React.FC = () => {
           <div className="lp-footer-divider" />
 
           <div className="lp-footer-bottom">
-            <p>© 2026 NovaAI, Inc. All rights reserved.</p>
+            <p>© 2026 LandingCraft, Inc. All rights reserved.</p>
             <p>Privacy Policy · Terms of Service · Cookie Settings</p>
           </div>
         </footer>
