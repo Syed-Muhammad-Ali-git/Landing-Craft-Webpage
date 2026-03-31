@@ -20,9 +20,10 @@ const Navigation: FC = () => {
     <Box
       sx={{
         display: "flex",
-        flexFlow: "nowrap",
+        flexFlow: "row wrap",
         justifyContent: "end",
         flexDirection: "row",
+        alignItems: "center",
         "@media (max-width: 1255px)": { flexDirection: "column" },
       }}
     >
@@ -77,8 +78,11 @@ const Navigation: FC = () => {
           display: "inline-flex",
           alignItems: "center",
           justifyContent: "center",
-          // px: { xs: 0, lg: 3 },
-          // mb: { xs: 3, lg: 0 },
+          "@media (min-width: 1256px) and (max-width: 1393px)": {
+            py: 1, // Padding par top and bottom for when it wraps
+            width: "100%", // Force to center line nicely
+            marginTop: "10px"
+          }
         }}
       >
         <ConnectButton />

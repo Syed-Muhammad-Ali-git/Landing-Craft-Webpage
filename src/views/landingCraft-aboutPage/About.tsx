@@ -13,7 +13,6 @@ const NovaAbout: React.FC = () => {
         <section className="lp-hero">
           <div
             className="lp-hero-content"
-            style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}
           >
             <div className="lp-hero-badge fade-up">Our Mission</div>
             <h1
@@ -24,12 +23,20 @@ const NovaAbout: React.FC = () => {
             </h1>
             <p
               className="lp-hero-desc fade-up"
-              style={{ margin: "1.25rem auto 0", animationDelay: "0.2s" }}
+              style={{ animationDelay: "0.2s" }}
             >
               LandingCraft was founded on the belief that cutting-edge
               artificial intelligence should be accessible to teams of all
               sizes, not just tech giants.
             </p>
+          </div>
+          <div className="lp-hero-visual">
+            <div style={{ background: "linear-gradient(135deg, rgba(108, 99, 255, 0.2), rgba(255, 101, 132, 0.2))", borderRadius: "24px", padding: "2rem", border: "1px solid rgba(108, 99, 255, 0.3)" }}>
+              <img src="/images/headline-curve.svg" alt="Mission" style={{ width: "100%", opacity: 0.8, filter: "hue-rotate(90deg)" }} />
+              <div style={{ marginTop: "1.5rem", fontSize: "1.2rem", fontWeight: "600", color: "#f0f0ff", textAlign: "center", fontStyle: "italic" }}>
+                "Data has no limits, and neither should your tools."
+              </div>
+            </div>
           </div>
         </section>
 

@@ -15,7 +15,7 @@ const LandingCraftFooter: React.FC = () => {
           </p>
           {/* Contact Information */}
           <div className="lp-footer-contact" style={{ marginTop: "1.25rem" }}>
-            <div className="lp-contact-item">
+            <div className="lp-contact-item" style={{ cursor: "pointer" }}>
               <span>📧</span>
               <a href="mailto:hello@landingcraft.ai">
                 hello@landingcraft.ai

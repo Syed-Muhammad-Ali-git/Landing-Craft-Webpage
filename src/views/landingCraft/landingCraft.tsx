@@ -133,6 +133,49 @@ const ProductLanding: React.FC = () => {
           </div>
         </section>
 
+        {/* ── SAMPLE PRODUCT ── */}
+        <section className="lp-features" id="sample-product">
+          <div className="lp-section-label">Live Example</div>
+          <h2 className="lp-section-title">See our technology in action</h2>
+          
+          <div style={{ maxWidth: "800px", margin: "0 auto", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "24px", padding: "2.5rem", position: "relative", overflow: "hidden", boxShadow: "0 20px 40px rgba(0,0,0,0.5)" }}>
+            <div style={{ position: "absolute", top: "-50px", right: "-50px", width: "150px", height: "150px", background: "radial-gradient(circle, rgba(67, 233, 123, 0.3) 0%, transparent 70%)" }}></div>
+            
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "2rem", borderBottom: "1px solid var(--border)", paddingBottom: "1.5rem" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+                <div style={{ width: "48px", height: "48px", background: "linear-gradient(135deg, var(--accent), var(--accent2))", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5rem" }}>
+                  📈
+                </div>
+                <div>
+                  <h3 style={{ margin: 0, fontSize: "1.2rem", fontWeight: "700" }}>Alpha Trade Monitor</h3>
+                  <div style={{ fontSize: "0.85rem", color: "var(--accent3)" }}>● Real-time analysis</div>
+                </div>
+              </div>
+              <button className="lp-btn-primary" style={{ padding: "0.5rem 1rem", fontSize: "0.9rem" }}>View Details</button>
+            </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1.5rem", marginBottom: "2rem" }}>
+              <div style={{ background: "rgba(0,0,0,0.2)", padding: "1.5rem", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.05)" }}>
+                <div style={{ color: "var(--muted)", fontSize: "0.85rem", marginBottom: "0.5rem" }}>Predicted ROI</div>
+                <div style={{ fontSize: "1.8rem", fontWeight: "800", color: "var(--accent3)" }}>+24.5%</div>
+              </div>
+              <div style={{ background: "rgba(0,0,0,0.2)", padding: "1.5rem", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.05)" }}>
+                <div style={{ color: "var(--muted)", fontSize: "0.85rem", marginBottom: "0.5rem" }}>Risk Velocity</div>
+                <div style={{ fontSize: "1.8rem", fontWeight: "800", color: "var(--accent2)" }}>0.014</div>
+              </div>
+              <div style={{ background: "rgba(0,0,0,0.2)", padding: "1.5rem", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.05)" }}>
+                <div style={{ color: "var(--muted)", fontSize: "0.85rem", marginBottom: "0.5rem" }}>Confidence Score</div>
+                <div style={{ fontSize: "1.8rem", fontWeight: "800" }}>98.2</div>
+              </div>
+            </div>
+
+            <div style={{ height: "4px", background: "rgba(108, 99, 255, 0.2)", borderRadius: "2px", overflow: "hidden" }}>
+              <div style={{ width: "98.2%", height: "100%", background: "linear-gradient(90deg, var(--accent), var(--accent3))" }}></div>
+            </div>
+            <div style={{ textAlign: "right", marginTop: "0.5rem", fontSize: "0.75rem", color: "var(--muted)" }}>Model processing complete</div>
+          </div>
+        </section>
+
         {/* ── FOOTER ── */}
         <LandingCraftFooter />
       </div>
