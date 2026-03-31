@@ -81,7 +81,7 @@ const BlogCard = ({ item }: any) => {
         intervalRef.current = null;
       }
     };
-  }, []);
+  }, [item.distance]);
 
   return (
     <Card

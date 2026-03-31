@@ -17,11 +17,6 @@ const LandingCraftHeader: React.FC = () => {
     return false;
   };
 
-  const handleLinkClick = (path: string) => {
-    setIsMenuOpen(false);
-    navigate(path);
-  };
-
   return (
     <>
       <header
