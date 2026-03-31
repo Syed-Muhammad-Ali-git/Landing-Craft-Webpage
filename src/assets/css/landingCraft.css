@@ -27,6 +27,7 @@
   color: var(--text);
   min-height: 100vh;
   overflow-x: hidden;
+  text-align: left;
 }
 
 /* ── HEADER ── */

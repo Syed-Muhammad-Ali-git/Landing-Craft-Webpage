@@ -1,33 +1,13 @@
 import React from "react";
+import LandingCraftHeader from "../../components/header/LandingCraftHeader";
+import LandingCraftFooter from "../../components/footer/landingCraft-footer";
 import "../../assets/css/landingCraft-about.css";
 
 const NovaAbout: React.FC = () => {
   return (
     <div className="lp-root">
       {/* ── HEADER ── */}
-      <header className="lp-header">
-        <div
-          className="lp-logo"
-          style={{ cursor: "pointer" }}
-          onClick={() => window.location.replace("/landingCraft")}
-        >
-          Landing<span>Craft</span>
-        </div>
-        <nav>
-          <ul className="lp-nav">
-            <li>
-              <a href="/#features">Features</a>
-            </li>
-            <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button className="lp-cta-btn">Get Started →</button>
-      </header>
+      <LandingCraftHeader />
 
       <main>
         <section className="lp-hero">
@@ -97,45 +77,7 @@ const NovaAbout: React.FC = () => {
         </section>
       </main>
 
-      <footer className="lp-footer" id="contact">
-        <div className="lp-footer-top">
-          <div className="lp-footer-brand">
-            <div className="lp-logo">
-              Landing<span>Craft</span>
-            </div>
-            <p>
-              Intelligent automation for modern teams. We make AI accessible,
-              reliable, and genuinely useful.
-            </p>
-          </div>
-          <div className="lp-footer-col">
-            <h4>Product</h4>
-            <ul>
-              <li>
-                <a href="#">Features</a>
-              </li>
-              <li>
-                <a href="#">Integrations</a>
-              </li>
-            </ul>
-          </div>
-          <div className="lp-footer-col">
-            <h4>Company</h4>
-            <ul>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Careers</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="lp-footer-divider" />
-        <div className="lp-footer-bottom">
-          <p>© 2026 LandingCraft, Inc. All rights reserved.</p>
-        </div>
-      </footer>
+      <LandingCraftFooter />
     </div>
   );
 };
