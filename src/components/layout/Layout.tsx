@@ -8,7 +8,7 @@ import Notifications from "../Notifications";
 const MainWrapper = styled("div")(() => ({
   display: "flex",
   minHeight: "100vh",
-  width: "100%"
+  width: "100%",
 }));
 
 const PageWrapper = styled("div")(() => ({
@@ -16,7 +16,7 @@ const PageWrapper = styled("div")(() => ({
   flexGrow: 1,
   flexDirection: "column",
   zIndex: 1,
-  backgroundColor: "transparent"
+  backgroundColor: "transparent",
 }));
 
 const Layout = () => {
@@ -29,9 +29,9 @@ const Layout = () => {
           sx={{
             padding: "0px !important",
             [theme.breakpoints.up("sm")]: {
-              maxWidth: "100%"
+              maxWidth: "100%",
             },
-            width: "calc(100vw - 6px)"
+            width: "calc(100vw - 6px)",
           }}
         >
           <Outlet />

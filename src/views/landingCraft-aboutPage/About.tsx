@@ -11,9 +11,7 @@ const NovaAbout: React.FC = () => {
 
       <main>
         <section className="lp-hero">
-          <div
-            className="lp-hero-content"
-          >
+          <div className="lp-hero-content">
             <div className="lp-hero-badge fade-up">Our Mission</div>
             <h1
               className="lp-hero-title fade-up"
@@ -31,9 +29,34 @@ const NovaAbout: React.FC = () => {
             </p>
           </div>
           <div className="lp-hero-visual">
-            <div style={{ background: "linear-gradient(135deg, rgba(108, 99, 255, 0.2), rgba(255, 101, 132, 0.2))", borderRadius: "24px", padding: "2rem", border: "1px solid rgba(108, 99, 255, 0.3)" }}>
-              <img src="/images/headline-curve.svg" alt="Mission" style={{ width: "100%", opacity: 0.8, filter: "hue-rotate(90deg)" }} />
-              <div style={{ marginTop: "1.5rem", fontSize: "1.2rem", fontWeight: "600", color: "#f0f0ff", textAlign: "center", fontStyle: "italic" }}>
+            <div
+              style={{
+                background:
+                  "linear-gradient(135deg, rgba(108, 99, 255, 0.2), rgba(255, 101, 132, 0.2))",
+                borderRadius: "24px",
+                padding: "2rem",
+                border: "1px solid rgba(108, 99, 255, 0.3)",
+              }}
+            >
+              <img
+                src="/images/headline-curve.svg"
+                alt="Mission"
+                style={{
+                  width: "100%",
+                  opacity: 0.8,
+                  filter: "hue-rotate(90deg)",
+                }}
+              />
+              <div
+                style={{
+                  marginTop: "1.5rem",
+                  fontSize: "1.2rem",
+                  fontWeight: "600",
+                  color: "#f0f0ff",
+                  textAlign: "center",
+                  fontStyle: "italic",
+                }}
+              >
                 "Data has no limits, and neither should your tools."
               </div>
             </div>
@@ -49,19 +72,25 @@ const NovaAbout: React.FC = () => {
             <div className="lp-feature-card">
               <div className="lp-feature-name">Our Vision</div>
               <p className="lp-feature-text">
-                To create a world where every business, regardless of size, can leverage the power of advanced data analytics and AI to drive meaningful growth and innovation.
+                To create a world where every business, regardless of size, can
+                leverage the power of advanced data analytics and AI to drive
+                meaningful growth and innovation.
               </p>
             </div>
             <div className="lp-feature-card">
               <div className="lp-feature-name">Who We Are</div>
               <p className="lp-feature-text">
-                We are a team of data scientists, engineers, and creatives passionate about solving complex problems. LandingCraft was born out of a desire to simplify the data landscape.
+                We are a team of data scientists, engineers, and creatives
+                passionate about solving complex problems. LandingCraft was born
+                out of a desire to simplify the data landscape.
               </p>
             </div>
             <div className="lp-feature-card">
               <div className="lp-feature-name">What We Do</div>
               <p className="lp-feature-text">
-                We provide a unified platform that turns raw operational data into actionable intelligence. With instant automation and predictive analytics, you stay ahead of the curve.
+                We provide a unified platform that turns raw operational data
+                into actionable intelligence. With instant automation and
+                predictive analytics, you stay ahead of the curve.
               </p>
             </div>
           </div>

@@ -30,7 +30,7 @@ const LandingCraftHeader: React.FC = () => {
         >
           Landing<span>Craft</span>
         </div>
-        
+
         {/* Desktop Nav */}
         <nav className="lp-desktop-nav">
           <ul className="lp-nav">
@@ -64,14 +64,19 @@ const LandingCraftHeader: React.FC = () => {
             gap: "1rem",
           }}
         >
-          <button className="lp-cta-btn lp-back-btn" onClick={() => navigate("/dashboard")}>
+          <button
+            className="lp-cta-btn lp-back-btn"
+            onClick={() => navigate("/dashboard")}
+          >
             ← Back to eSTOKKYAM
           </button>
-          <button className="lp-cta-btn lp-get-started-btn">Get Started →</button>
-          
-          <IconButton 
+          <button className="lp-cta-btn lp-get-started-btn">
+            Get Started →
+          </button>
+
+          <IconButton
             className="lp-mobile-menu-btn"
-            onClick={() => setIsMenuOpen(true)} 
+            onClick={() => setIsMenuOpen(true)}
             sx={{ color: "var(--text)" }}
           >
             <Menu />
@@ -80,7 +85,7 @@ const LandingCraftHeader: React.FC = () => {
       </header>
 
       {/* Mobile Full Screen Menu */}
-      <div 
+      <div
         className={`lp-mobile-menu-overlay ${isMenuOpen ? "open" : ""}`}
         style={{
           position: "fixed",
@@ -93,7 +98,7 @@ const LandingCraftHeader: React.FC = () => {
           transition: "top 0.3s ease-in-out",
           display: "flex",
           flexDirection: "column",
-          padding: "2rem"
+          padding: "2rem",
         }}
       >
         <IconButton
@@ -101,46 +106,72 @@ const LandingCraftHeader: React.FC = () => {
             position: "absolute",
             top: 15,
             right: 15,
-            color: "var(--text)"
+            color: "var(--text)",
           }}
           onClick={() => setIsMenuOpen(false)}
         >
           <Close />
         </IconButton>
-        
-        <div style={{ marginTop: "4rem", display: "flex", flexDirection: "column", gap: "2rem", alignItems: "center" }}>
+
+        <div
+          style={{
+            marginTop: "4rem",
+            display: "flex",
+            flexDirection: "column",
+            gap: "2rem",
+            alignItems: "center",
+          }}
+        >
           <a
             href="/landingCraft#features"
-            style={{ color: "var(--text)", textDecoration: "none", fontSize: "1.2rem", fontWeight: 600 }}
+            style={{
+              color: "var(--text)",
+              textDecoration: "none",
+              fontSize: "1.2rem",
+              fontWeight: 600,
+            }}
             onClick={() => setIsMenuOpen(false)}
           >
             Features
           </a>
           <a
             href="/landingCraft/about"
-            style={{ color: "var(--text)", textDecoration: "none", fontSize: "1.2rem", fontWeight: 600 }}
+            style={{
+              color: "var(--text)",
+              textDecoration: "none",
+              fontSize: "1.2rem",
+              fontWeight: 600,
+            }}
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </a>
           <a
             href="#contact"
-            style={{ color: "var(--text)", textDecoration: "none", fontSize: "1.2rem", fontWeight: 600 }}
+            style={{
+              color: "var(--text)",
+              textDecoration: "none",
+              fontSize: "1.2rem",
+              fontWeight: 600,
+            }}
             onClick={() => setIsMenuOpen(false)}
           >
             Contact
           </a>
-          <button 
-            className="lp-cta-btn" 
+          <button
+            className="lp-cta-btn"
             style={{ width: "100%", maxWidth: "300px" }}
           >
             Get Started →
           </button>
-          
-          <button 
-            className="lp-cta-btn lp-btn-secondary lp-mobile-back-btn" 
+
+          <button
+            className="lp-cta-btn lp-btn-secondary lp-mobile-back-btn"
             style={{ width: "100%", maxWidth: "300px", marginTop: "1rem" }}
-            onClick={() => { setIsMenuOpen(false); navigate("/dashboard"); }}
+            onClick={() => {
+              setIsMenuOpen(false);
+              navigate("/dashboard");
+            }}
           >
             ← Back to eSTOKKYAM
           </button>

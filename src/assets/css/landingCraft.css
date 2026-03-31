@@ -643,7 +643,7 @@
   .lp-footer-top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
       "brand brand brand"
       "col1 col2 col3";
     gap: 1.5rem;

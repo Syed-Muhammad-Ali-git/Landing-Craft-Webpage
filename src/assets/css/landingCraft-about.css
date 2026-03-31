@@ -12,7 +12,7 @@
 }
 
 .lp-root {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   background: var(--lp-bg);
   color: var(--lp-text);
   min-height: 100vh;
@@ -37,7 +37,7 @@
 }
 
 .lp-logo {
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-weight: 800;
   font-size: 1.4rem;
   letter-spacing: -0.8px;
@@ -68,7 +68,9 @@
   transition: color 0.2s;
 }
 
-.lp-nav a:hover { color: var(--lp-text); }
+.lp-nav a:hover {
+  color: var(--lp-text);
+}
 
 .lp-cta-btn {
   background: linear-gradient(135deg, var(--lp-accent), #8b5cf6);
@@ -79,12 +81,12 @@
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   transition: all 0.2s ease;
 }
 
-.lp-cta-btn:hover { 
-  opacity: 0.95; 
+.lp-cta-btn:hover {
+  opacity: 0.95;
   transform: translateY(-1px);
 }
 
@@ -101,11 +103,15 @@
 }
 
 .lp-hero::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(108,99,255,0.15) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(108, 99, 255, 0.15) 0%,
+    transparent 70%
+  );
   top: -100px;
   right: -100px;
   pointer-events: none;
@@ -126,19 +132,27 @@
 }
 
 .lp-badge-dot {
-  width: 6px; height: 6px;
+  width: 6px;
+  height: 6px;
   background: var(--lp-accent3);
   border-radius: 50%;
   animation: pulse-nova 2s infinite;
 }
 
 @keyframes pulse-nova {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(1.2); }
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.2);
+  }
 }
 
 .lp-hero-title {
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: clamp(2.4rem, 5vw, 4rem);
   font-weight: 800;
   line-height: 1.1;
@@ -176,14 +190,14 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   transition: all 0.3s ease;
   box-shadow: var(--lp-glow);
 }
 
 .lp-btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 60px rgba(108,99,255,0.5);
+  box-shadow: 0 0 60px rgba(108, 99, 255, 0.5);
 }
 
 .lp-btn-secondary {
@@ -195,13 +209,13 @@
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   transition: all 0.2s ease;
 }
 
 .lp-btn-secondary:hover {
   border-color: var(--lp-accent);
-  background: rgba(108,99,255,0.08);
+  background: rgba(108, 99, 255, 0.08);
 }
 
 /* ── PRODUCT IMAGE ── */
@@ -219,7 +233,9 @@
   border-radius: 24px;
   overflow: hidden;
   border: 1px solid var(--lp-border);
-  box-shadow: 0 40px 80px rgba(0,0,0,0.6), var(--lp-glow);
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, 0.6),
+    var(--lp-glow);
 }
 
 .lp-product-img {
@@ -235,12 +251,20 @@
 }
 
 .lp-product-img::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: 
-    radial-gradient(ellipse at 30% 20%, rgba(108,99,255,0.25) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 80%, rgba(255,101,132,0.15) 0%, transparent 50%);
+  background:
+    radial-gradient(
+      ellipse at 30% 20%,
+      rgba(108, 99, 255, 0.25) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 70% 80%,
+      rgba(255, 101, 132, 0.15) 0%,
+      transparent 50%
+    );
 }
 
 .lp-device-mockup {
@@ -255,8 +279,8 @@
 .lp-device-screen {
   width: 180px;
   height: 120px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -266,14 +290,14 @@
 
 .lp-device-icon {
   font-size: 3rem;
-  filter: drop-shadow(0 0 20px rgba(108,99,255,0.8));
+  filter: drop-shadow(0 0 20px rgba(108, 99, 255, 0.8));
 }
 
 .lp-device-label {
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   letter-spacing: 1.5px;
   text-transform: uppercase;
   position: relative;
@@ -284,8 +308,8 @@
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  background: rgba(67,233,123,0.15);
-  border: 1px solid rgba(67,233,123,0.3);
+  background: rgba(67, 233, 123, 0.15);
+  border: 1px solid rgba(67, 233, 123, 0.3);
   border-radius: 100px;
   padding: 0.3rem 0.8rem;
   font-size: 0.72rem;
@@ -311,7 +335,7 @@
 }
 
 .lp-stat-num {
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: -0.5px;
@@ -343,7 +367,7 @@
 }
 
 .lp-section-title {
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   font-weight: 800;
   letter-spacing: -1.2px;
@@ -370,9 +394,11 @@
 }
 
 .lp-feature-card::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 2px;
   background: linear-gradient(90deg, var(--lp-accent), var(--lp-accent2));
   opacity: 0;
@@ -381,11 +407,13 @@
 
 .lp-feature-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(108,99,255,0.4);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  border-color: rgba(108, 99, 255, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.lp-feature-card:hover::before { opacity: 1; }
+.lp-feature-card:hover::before {
+  opacity: 1;
+}
 
 .lp-feature-icon {
   width: 52px;
@@ -398,12 +426,18 @@
   margin-bottom: 1.5rem;
 }
 
-.lp-fi-1 { background: rgba(108,99,255,0.15); }
-.lp-fi-2 { background: rgba(255,101,132,0.15); }
-.lp-fi-3 { background: rgba(67,233,123,0.15); }
+.lp-fi-1 {
+  background: rgba(108, 99, 255, 0.15);
+}
+.lp-fi-2 {
+  background: rgba(255, 101, 132, 0.15);
+}
+.lp-fi-3 {
+  background: rgba(67, 233, 123, 0.15);
+}
 
 .lp-feature-name {
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
@@ -439,7 +473,7 @@
 }
 
 .lp-footer-col h4 {
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
@@ -461,7 +495,9 @@
   transition: color 0.2s;
 }
 
-.lp-footer-col a:hover { color: var(--lp-text); }
+.lp-footer-col a:hover {
+  color: var(--lp-text);
+}
 
 .lp-footer-divider {
   height: 1px;
@@ -502,12 +538,20 @@
   transition: color 0.2s;
 }
 
-.lp-contact-item a:hover { color: var(--lp-accent); }
+.lp-contact-item a:hover {
+  color: var(--lp-accent);
+}
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp-nova {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-up {
@@ -523,10 +567,18 @@
     text-align: center;
   }
 
-  .lp-hero-desc { margin: 1.25rem auto 0; }
-  .lp-hero-actions { justify-content: center; }
-  .lp-hero-visual { order: -1; }
-  .lp-product-card { max-width: 340px; }
+  .lp-hero-desc {
+    margin: 1.25rem auto 0;
+  }
+  .lp-hero-actions {
+    justify-content: center;
+  }
+  .lp-hero-visual {
+    order: -1;
+  }
+  .lp-product-card {
+    max-width: 340px;
+  }
 
   .lp-features-grid {
     grid-template-columns: 1fr;
@@ -537,14 +589,29 @@
     gap: 2rem;
   }
 
-  .lp-nav { display: none; }
-  .lp-stats { gap: 2rem; }
+  .lp-nav {
+    display: none;
+  }
+  .lp-stats {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 560px) {
-  .lp-footer-top { grid-template-columns: 1fr; }
-  .lp-footer-bottom { flex-direction: column; text-align: center; }
-  .lp-hero-title { font-size: 2rem; }
-  .lp-stats { gap: 1.5rem; }
-  .lp-stat-num { font-size: 1.5rem; }
+  .lp-footer-top {
+    grid-template-columns: 1fr;
+  }
+  .lp-footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lp-hero-title {
+    font-size: 2rem;
+  }
+  .lp-stats {
+    gap: 1.5rem;
+  }
+  .lp-stat-num {
+    font-size: 1.5rem;
+  }
 }
