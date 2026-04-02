@@ -29,3 +29,6 @@ npm install
 ```bash
 npm start
 ```
+live url
+
+https://estockyyam.vercel.app/
